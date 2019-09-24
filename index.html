@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Juego Memoria</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:400,600"
+      rel="stylesheet"
+    />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <div id="comenzar" class="hidden">
+      <h1>Emoji Memory game 😉</h1>
+      <input type="button" class="inicio" name="button" value="Start Game">
+
+
+    </div>
+    <header id="cabecera" class="hidden">
+      <div class="contadores">
+        <div class="contador-item">
+          <h4 class="cabecera-titulo">Movements</h4>
+          <div class="cabecera-num">
+            <span id="mov">00</span>/<span id="mov-total">20</span>
+          </div>
+        </div>
+
+      </div>
+      <div id="cronometro" class="contador-item">
+        <h4 class="cabecera-titulo">Time</h4>
+        <div class="cabecera-num">
+          <span id="minutos">00</span>:<span id="segundos">00</span>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <div id="mesa" class="hidden"></div>
+      <div id="ganaste">
+        <h2>Congratulations! 👏</h2>
+        <button type="button" class="reiniciar">Restart</button>
+
+        </div>
+        <div id="game-over">
+          <h2 id="pierde">Oh no! </h2>
+          <p>You have run out of movements 👎</p>
+          <button type="button" class="reiniciar">Restart</button>
+        </div>
+
+        <div id="tiempo">
+          <h2 id="pierde">Oh no!</h2>
+          <p>You have run out of time 🕘</p>
+          <button type="button" class="reiniciar">Restart</button>
+
+        </div>
+    </main>
+    <script src="js/variables-globales.js"></script>
+    <script src="js/descubrir-comparar.js"></script>
+    <script src="js/baraja-reparte.js"></script>
+    <script src="js/acierto-error.js"></script>
+    <script src="js/contador.js"></script>
+    <script src="js/cronometro.js"></script>
+    <script src="js/gameover.js"></script>
+
+    <script src="js/finalizar.js"></script>
+    <script src="js/iniciar.js"></script>
+    <script src="js/pantalla-inicio.js"></script>
+
+
+
+  </body>
+
+  </html>
